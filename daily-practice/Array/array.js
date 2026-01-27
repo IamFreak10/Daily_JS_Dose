@@ -17,12 +17,13 @@ const arr1 = ['Cecilie', 'Lone'];
 const arr2 = ['Emil', 'Tobias', 'Linus'];
 const arr3 = ['Robin', 'Morgan'];
 const myChildren = arr1.concat(arr2, arr3);
-// console.log(myChildren);
+const myChildren2 = myChildren.concat('Mahfuj');
+// console.log(myChildren2); //!Returns a new array,not modify the original array
 // ** concat()- joins two or more arrays,and returns a new array
 
-fruits.copyWithin(2, 0);
+// fruits.copyWithin(4, 0);
 // console.log(fruits);
-fruits.copyWithin(2, 0, 2);
+// fruits.copyWithin(2, 0, 2);
 // console.log(fruits);
 const myArr = [
   [1, 2],
@@ -36,4 +37,9 @@ const newArr = myArr.flat(Infinity);
 const fruits2 = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
 const citrus = fruits2.slice(3); //?Slice out a part of an array starting from array element 3 ("Apple"):
 const citrus2 = fruits2.slice(1, 2); //?The method then selects elements from the start argument, and up to (but not including) the end argument.["orange"]
-console.log(citrus2);
+// console.log(citrus2);
+const copArray = ['q', 'w', 'e', 'r', 't','y'];
+// sow output ertert
+copArray.copyWithin(0, 2, 5);
+
+console.log(copArray);
