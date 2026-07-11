@@ -1,28 +1,28 @@
-//array
-let array=[1,2,3,4,5]
-//shallow copy:same reference share kore
-let b=array;
-// b.push(6)
-// console.log(array)
-// [ 1, 2, 3, 4, 5, 6 ] 
+// //array
+// let array=[1,2,3,4,5]
+// //shallow copy:same reference share kore
+// let b=array;
+// // b.push(6)
+// // console.log(array)
+// // [ 1, 2, 3, 4, 5, 6 ] 
 
-const myArr=new Array(1,2,3,4,5)
+// const myArr=new Array(1,2,3,4,5)
 
-// Array Methods:
-myArr.push(6)
-console.log(myArr)
-myArr.pop()
-console.log(myArr)
-myArr.unshift(9)
-console.log(myArr) //ekta hoile thik but onek unshift hhole problem,optimized na
+// // Array Methods:
+// myArr.push(6)
+// console.log(myArr)
+// myArr.pop()
+// console.log(myArr)
+// myArr.unshift(9)
+// console.log(myArr) //ekta hoile thik but onek unshift hhole problem,optimized na
 
-myArr.shift()
-console.log(myArr)
+// myArr.shift()
+// console.log(myArr)
 
 
 const marvel_heros=["thor","spiderman","ironman"]
 const dc=["superman","flash","batman"]
-// const mc=marvel_heros.splice(0,2,"Hulk","Stephen Starnge");
+const mc=marvel_heros.splice(0,2,"Hulk","Stephen Starnge");
 // The splice() method of Array instances changes the 
 // contents of an array by removing or 
 // replacing existing elements and/or adding new elements in place.,
@@ -54,11 +54,11 @@ const preFlat= [
 ];
 
 // console.log(preFlat.flat(Infinity))
-console.log(Array.isArray("Mahfuj"))
-console.log(Array.from("Mahfuj"))
-console.log(Array.from({name:"Mahfuj"}))
+// console.log(Array.isArray("Mahfuj"))
+// console.log(Array.from("Mahfuj"))
+// console.log(Array.from({name:"Mahfuj"}))
 
 let score1=100
 let score2=200
 let score3=300
-console.log(Array.of(score1,score2,score3))
+// console.log(Array.of(score1,score2,score3))
