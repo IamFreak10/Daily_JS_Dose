@@ -41,5 +41,4 @@ const citrus2 = fruits2.slice(1, 2); //?The method then selects elements from th
 const copArray = ['q', 'w', 'e', 'r', 't','y'];
 // sow output ertert
 copArray.copyWithin(0, 2, 5);
-
 console.log(copArray);

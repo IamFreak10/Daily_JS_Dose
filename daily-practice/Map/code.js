@@ -65,5 +65,5 @@ let map2 = new Map([
   ['b', 2],
   ['c', 3],
 ]);
-console.log(Array.from(map2));
+console.log(Array.from(map2).flat(Infinity));
 
