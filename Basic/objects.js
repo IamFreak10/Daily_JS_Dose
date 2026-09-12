@@ -2,17 +2,17 @@
 // Object.create
 
 //Objects Literals
-const mySym=Symbol("key")
-const JsUser={
-name:"Mahfuj",
-age:18,
-"full name":"Mahfuj Abdullah",
-location:"Barishal",
-isLoggedIn:false,
-lastLoginDays:["Sat","Mon"],
-// mySym:"MyKy1" its a string not symbol
-[mySym]:"key1"
-}
+const mySym = Symbol('key');
+const JsUser = {
+  name: 'Mahfuj',
+  age: 18,
+  'full name': 'Mahfuj Abdullah',
+  location: 'Barishal',
+  isLoggedIn: false,
+  lastLoginDays: ['Sat', 'Mon'],
+  // mySym:"MyKy1" its a string not symbol
+  [mySym]: 'key1',
+};
 
 // console.log(JsUser.location)
 // console.log(JsUser["name"])
@@ -26,57 +26,53 @@ lastLoginDays:["Sat","Mon"],
 // console.log(typeof JsUser[mySym])
 // console.log(JsUser) Mahfuj Stays
 
+JsUser.greetings = function () {
+  console.log('Hello JS User');
+};
+JsUser.greetingsTwo = function () {
+  console.log(`hello Js ,${this.name}`);
+};
 
-JsUser.greetings=function(){
-    console.log("Hello JS User")
-}
-JsUser.greetingsTwo=function(){
-    console.log(`hello Js ,${this.name}`)
-}
-
-// console.log(JsUser.greetings()) 
+// console.log(JsUser.greetings())
 // is not a function
 // console.log(JsUser.greetings)
-//  Functions reference 
+//  Functions reference
 // console.log(JsUser.greetings())
 // console.log(JsUser.greetingsTwo())
 
-
-// Singleton 
+// Singleton
 // const tinder=new Object()
 //non singleton
-const tinder={}
-tinder.id="1223abc"
-tinder.name="Meaw Biral"
-tinder.isLoggedIn=false
+const tinder = {};
+tinder.id = '1223abc';
+tinder.name = 'Meaw Biral';
+tinder.isLoggedIn = false;
 // console.log(tinder)
-const regularUser={
-    email:"agge@",
-    fullName:{
-        userName:{
-            // firstName:"Hola",
-            lastName:"Biral"
-            
-        }
-    }
-}
-// console.log(regularUser?.fullName?.userName?.firstName); 
+const regularUser = {
+  email: 'agge@',
+  fullName: {
+    userName: {
+      // firstName:"Hola",
+      lastName: 'Biral',
+    },
+  },
+};
+// console.log(regularUser?.fullName?.userName?.firstName);
 // //returns undefined
 
 // Object assign
-// The Object.assign() static method copies all 
-// enumerable own properties from one or more source 
+// The Object.assign() static method copies all
+// enumerable own properties from one or more source
 // objects to a target object.
 //  It returns the modified target object.
 const target = { a: 1, b: 2 };
 const source = { b: 4, c: 5 };
 
-const returnedTarget = Object.assign({},target, source);
-// console.log(returnedTarget)
+const returnedTarget = Object.assign({}, target, source);
+console.log(returnedTarget);
 
 console.log(returnedTarget === target);
 // Expected output: false
-
 
 // const returnedTarget = Object.assign(target, source);
 
@@ -87,16 +83,25 @@ console.log(returnedTarget === target);
 // // In This case Expected output: true
 
 // But use this spred operator
-const st={...target,...source}
+const st = { ...target, ...source };
 // console.log(st);
-const users=[
-    {
-        id:1,
-        email:"Mahfuj@gmail"
-    }
-]
+const users = [
+  {
+    id: 1,
+    email: 'Mahfuj@gmail',
+  },
+];
 console.log(tinder);
 
-console.log(Object.keys(tinder))
-console.log(Object.values(tinder))
-console.log(Object.entries(tinder))
+console.log(Object.keys(tinder));
+console.log(Object.values(tinder));
+console.log(Object.entries(tinder));
+
+
+// #######**********Object Destructuring***************#######
+const myObj={
+    name:"Biral",
+    age:3
+}
+const{name,age}=myObj
+console.log(name,age)

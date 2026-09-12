@@ -10,9 +10,9 @@ let negativeValue = -value;
 // console.log(2 % 2);
 // console.log(2 ** 3);
 
-let str1 = 'Hello';
-let str2 = 'World';
-let str3 = str1 + str2;
+// let str1 = 'Hello';
+// let str2 = 'World';
+// let str3 = str1 + str2;
 // console.log(str3)
 // console.log('3' + 3);
 // console.log('3' - 3);
@@ -38,4 +38,4 @@ let str3 = str1 + str2;
 // console.log(+"3.5"); // 3.5
 // console.log(+"-3.5"); // -3.5
 
-// console.log(+"3"+3); // 33
+// console.log(+"3"+3); // 6
